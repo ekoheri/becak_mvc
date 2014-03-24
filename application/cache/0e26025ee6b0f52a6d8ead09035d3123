@@ -1,0 +1,42 @@
+1338135467TS---><html>
+<head>
+<title>Buku Tamu Sederhana</title>
+</head>
+<body>
+<h2>Buku Tamu Sederhana</h2>
+<h3>Isi Buku Tamu</h3>
+<form method="POST" action="http://localhost/becak/index.php/bukutamu/page/simpan">
+<p><input type="text" name="nama" size="40" value="" /><label>Nama</label></p>
+<p><input type="text" name="email" size="40" value="" /><label>Email</label></p>
+<label>Isi</label>
+<p><textarea name="isi" rows="5" cols="40"></textarea></p>
+<input type="hidden" name ="id" value="" />
+<input type="hidden" name ="status" value="data_baru" />
+<p><input type="submit" value="simpan"></p>
+</form>
+<h3>Daftar Buku Tamu</h3>
+<table border="1" width="100%" style="border-collapse:collapse;">
+<tr>
+	<th>ID</th>
+	<th>Nama</th>
+	<th>Email</th>
+	<th>Isi</th>
+	<th>Tgl Posting</th>
+	<th>Operasi</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td>Eko Heri</td>
+	<td>ekoheri@gmail.com</td>
+	<td>Ini Buku tamu say ayang pertama...</td>
+	<td>2012-05-27 23:15:24</td>
+	<td align="center">
+	<a href="http://localhost/becak/index.php/bukutamu/page/edit/1">Edit</a> - 
+	<a href="http://localhost/becak/index.php/bukutamu/page/hapus/1" onclick="return confirm('Anda yakin akan menghapus data ini?')">Hapus</a>
+	</td>
+</tr>
+</table>
+<p>Waktu komputasi {elapsed_time} detik. Kebutuhan memory {memory_usage}</p>
+</body>
+</html>
+
